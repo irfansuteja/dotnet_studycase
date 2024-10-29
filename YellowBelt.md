@@ -27,7 +27,6 @@ In this study case, we'll build a Communication Delivery Feature using .NET that
 4. EF Core
 5. SQL Server
 6. Logging Framework: Log4Net/NLog/Serilog
-7. Unit Test (xUnit/NUnit/etc)
 
 ### Implementation
 
