@@ -58,7 +58,6 @@ In this study case, we'll build a Communication Delivery Feature using .NET that
         │   ├── PushNotificationService/
         │   └── Persistence/
         ├── CommunicationDelivery.Persistence         # Database operations
-        └── CommunicationDelivery.Tests               # Unit testing project
         ```
         
 2. Define an Interface for Message Sending Service:
@@ -76,4 +75,3 @@ In this study case, we'll build a Communication Delivery Feature using .NET that
 Create a generic interface `IRepository<T>` that defines basic CRUD operations. This will allow any entity inheriting this interface to use the same methods.
 7. Create a Repository to Log any messaging activity.
 8. Implement a logging framework like **Serilog** or **NLog** to log exceptions, failures, or critical events.
-9. Implement Unit Testing using **xUnit** or **NUnit** to test the service logic and controller actions.
