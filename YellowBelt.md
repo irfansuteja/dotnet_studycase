@@ -32,11 +32,10 @@ In this study case, we'll build a Communication Delivery Feature using .NET that
 ### Implementation
 
 1. Create a solution that contains:
-    - [ASP.NET](http://ASP.NET) Core API / MVC project
+    - ASP.NET Core Web API / MVC project
     - Business Logic Layer:
     - External Service Integration (e.g., WhatsApp API, SMS Provider, Email Services)
     - Persistence (Repository Layer using EF Core)
-    - Test Project
         
         E.g., Project Structure
         
@@ -70,8 +69,8 @@ In this study case, we'll build a Communication Delivery Feature using .NET that
 4. Service Registration (Dependency Injection)
 5. Create a Controller with the following methods:
     1. SendMessage: to send a message based on the MessageType (WA, SMS, or Email)
-    2. SendBroadcast: to send the message using all channels (WA, SMS, and Email)
+    2. SendToAllChannels: to send the message using all channels (WA, SMS, and Email)
 6. Define and Implement a Generic Repository Interface
 Create a generic interface `IRepository<T>` that defines basic CRUD operations. This will allow any entity inheriting this interface to use the same methods.
-7. Create a Repository to Log any messaging activity.
-8. Implement a logging framework like **Serilog** or **NLog** to log exceptions, failures, or critical events.
+7. Create a Repository and Service to Log all messaging activity.
+8. Implement a logging framework like **Serilog** or **NLog** to log exceptions, failures, or critical events globally.
